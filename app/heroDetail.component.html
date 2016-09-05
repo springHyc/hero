@@ -1,0 +1,16 @@
+<div *ngIf="hero">
+  <h2>{{hero.name}}详情</h2>
+  <div>
+    <label>id: </label>
+    {{hero.id}}
+  </div>
+  <div>
+    <label>name:</label>
+    <input [(ngModel)]="hero.name" placeholder="name"> 
+  </div>
+  <div><label>age：</label>
+    {{hero.age}}
+  </div>
+  <button (click)="save()">保存</button>
+  <button (click)="goBack()">返回</button>
+</div>
